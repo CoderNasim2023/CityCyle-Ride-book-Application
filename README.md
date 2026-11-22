@@ -4,6 +4,10 @@ CityCycle is a native Android application for discovering, browsing, and renting
 
 The app uses SQLite for local persistence and a Java-based Android UI with XML layouts and ViewBinding.
 
+## App Overview
+
+CityCycle separates the experience into focused Android activities: authentication and profile screens manage user access, the home and catalog screens help users find cycles, and the rental and history screens handle booking and availability. `DBHelper` acts as the local data layer for SQLite records, seeded cycle information, and rental state updates.
+
 ## Features
 
 - **User authentication:** Sign up, sign in, sign out, and persistent session handling with `SharedPreferences`
